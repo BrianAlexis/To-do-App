@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/fav/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/fa43baac79.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>¡Todo List!</h1>
+    </header>
+
+        <section>
+            <div class="card">
+                <div class="filter-div">
+                    <h2 class="h2">Filtro</h2>
+                    <select name="todos" class="filter-todo">
+                        <option value="all">Todo</option>
+                        <option value="completed">Completado</option>
+                        <option value="uncompleted">Sin completar</option>
+                    </select>
+                </div>
+
+
+                <form>
+                    <input type="text" placeholder="¿What we do today?" class="todo-input" required>
+                    <button class="todo-button" type="submit">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </form>
+
+                <div class="todo-container">
+                    <ul class="todo-list"></ul>
+                </div>
+            </div>
+        </section>
+
+
+
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
